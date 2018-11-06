@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" id="KGk-i7-Jjw" customClass="CustomCell" customModule="Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="299.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activity" translatesAutoresizingMaskIntoConstraints="NO" id="Epv-dk-9RE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="QlU-OX-HPb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGF-Q8-CTo">
+                        <rect key="frame" x="32" y="216" width="256" height="57"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Epv-dk-9RE" secondAttribute="trailing" id="5jV-qW-peu"/>
+                    <constraint firstItem="Epv-dk-9RE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7s8-Bw-Fdn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PGF-Q8-CTo" secondAttribute="trailing" constant="16" id="IT1-SY-tdC"/>
+                    <constraint firstItem="PGF-Q8-CTo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="Iv7-e0-V0n"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PGF-Q8-CTo" secondAttribute="bottom" constant="16" id="cOW-8E-yKd"/>
+                    <constraint firstItem="PGF-Q8-CTo" firstAttribute="top" secondItem="Epv-dk-9RE" secondAttribute="bottom" constant="16" id="cfm-KI-8dE"/>
+                    <constraint firstItem="Epv-dk-9RE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rn8-CG-2Uq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="PGF-Q8-CTo" id="Lkg-3c-y0P"/>
+                <outlet property="myImage" destination="Epv-dk-9RE" id="AI1-is-NZz"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="-150"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="activity" width="43.5" height="43.5"/>
+    </resources>
+</document>
